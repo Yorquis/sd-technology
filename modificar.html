@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="sd-technology.jpeg" alt="Logo SD Technology" class="logo-principal">
+        <h1>Modificar Producto</h1>
+    </header>
+    <main>
+        <h2>Selecciona un Producto para Modificar</h2>
+        <form id="form-modificar">
+            <label for="producto">Producto:</label>
+            <select id="producto">
+                <option value="1124">Impresora EPSON 1124</option>
+                <option value="2315">Mouse Óptico GENIUS 2315</option>
+                <option value="0103">Teclado Ergonómico CLON 0103</option>
+                <option value="5315">Portátil ASUS 5315</option>
+                <option value="4520">Auriculares</option>
+            </select>
+            <label for="nuevo-precio">Nuevo Precio:</label>
+            <input type="number" id="nuevo-precio" required>
+            <label for="nueva-cantidad">Nueva Cantidad:</label>
+            <input type="number" id="nueva-cantidad" required>
+            <button type="button" onclick="modificarProducto()">Guardar Cambios</button>
+        </form>
+    </main>
+    <footer>
+        <a href="inventario.html">Volver al Inventario</a>
+    </footer>
+</body>
+<script>
+    function modificarProducto() {
+        alert("Producto modificado correctamente.");
+        window.location.href = "inventario.html";
+    }
+</script>
+</html>

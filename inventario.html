@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="sd-technology.jpeg" alt="Logo SD Technology" class="logo-principal">
+        <h1>Gestión de Inventario</h1>
+    </header>
+    <main>
+        <h2>Lista de Productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Código</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-productos">
+                <!-- Productos predefinidos -->
+                <tr>
+                    <td>Impresora EPSON 1124</td>
+                    <td>1124</td>
+                    <td>$690.000</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Mouse Óptico GENIUS 2315</td>
+                    <td>2315</td>
+                    <td>$23.000</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Teclado Ergonómico CLON 0103</td>
+                    <td>0103</td>
+                    <td>$51.000</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Portátil ASUS 5315</td>
+                    <td>5315</td>
+                    <td>$1.400.000</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Auriculares</td>
+                    <td>4520</td>
+                    <td>$70.000</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" onclick="redireccionarModificar()">Modificar Productos</button>
+    </main>
+    <footer>
+        <a href="modificar.html">Modificar Producto</a>
+        <a href="index.html">Inicio</a>
+    </footer>
+</body>
+<script>
+    function redireccionarModificar() {
+        window.location.href = "modificar.html";
+    }
+</script>
+</html>
